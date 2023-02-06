@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: delius;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.navbar{
+    width: 100%;
+    height: 55px;
+    background-color: #219ebc;
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    z-index: 3;
+    transition: height 0.5s;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+.burger_menu{
+    position: absolute;
+    top: 18px;
+    left: 2.5%;
+    display: none;
+}
+.home{
+    position: absolute;
+    right: 2.5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    padding: 18px 18px 18px 18px;
+}
+.home:hover{
+    background-color: white;
+    color: black;
+}
+
+.sidebar{
+    position: fixed;
+    padding-top: 55px;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    overflow: scroll;
+}
+
+
+.account{
+    width: 100%;
+    height: 50px;
+    background-color: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+.log_out{
+    height: 40px;
+    width: 100%;
+    background-color: #e5383b;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instruction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: bold;
+}
+.account:hover,.log_out:hover,.instruction:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+.content_menu{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.content_menu .title{
+    border: 2px gray dashed;
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.list_menu{
+    width: 85%;
+}
+.menu,.menu_1,.menu_2,.menu_3{
+    border-top: 1px #198574 dashed;
+    padding: 10px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.list_sub_menu_1 a,.list_sub_menu_2 a,.list_sub_menu_3 a{
+    text-decoration: none;
+    color: black;
+}
+.sub_menu{
+    padding: 10px 0px 10px 20px;
+}
+
+.sub_active{
+    background-color: lightblue;
+}
+
+.menu:hover,.menu_1:hover,.menu_2:hover,.menu_3:hover,.sub_menu:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+.list_sub_menu_1,.list_sub_menu_2,.list_sub_menu_3{
+    height: 0;
+    overflow: hidden;
+}
+.list_sub_menu_1.responsive,.list_sub_menu_2.responsive,.list_sub_menu_3.responsive{
+    height: auto;
+}
+
+.shadow{
+    position: fixed;
+    top: 55px;
+    background-color:rgba(0, 0, 0, 0.354);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.main{
+    width: 70%;
+    top: 87px;
+    position: relative;
+    left: 27.5%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+.footer{
+    position: relative;
+    left: 27.5%;
+    width: 70%;
+    top: 120px;
+    background-color: #219ebc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:792px){
+    .body{
+        overflow: hidden;
+    }
+    .burger_menu{
+        display: block;
+    }
+    .sidebar{
+        display: block;
+        width: 0%;
+    }
+    .sidebar.responsive{
+        width: 60%;
+        transition: 0.6s;
+    }
+    .sidebar_box{
+        width: 60vw;
+    }
+
+    .shadow.responsive{
+        display: block;
+    }
+
+    .main{
+        width: 90%;
+        left: 5%;
+        top: 75px;
+    }
+
+    .footer{
+        width: 100%;
+        top: 100px;
+        left: 0;
+    }
+}

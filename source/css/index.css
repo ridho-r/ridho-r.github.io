@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: delius;
+}
+.navbar{
+    width: 100%;
+    height: 55px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #219ebc;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-left: 1.5vw;
+}
+
+.burger_menu{
+    position: absolute;
+    top: 18px;
+    left: 2.5vw;
+    display: none;
+}
+
+.list_menu{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.list_menu a{
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.list_menu li{
+    padding:17.5px;
+}
+.list_menu li:hover{
+    background-color: #ddd;
+    color: black;
+}
+#icon{
+    padding-right: 0.5vw;
+}
+
+.login{
+    background-color: #da6033;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border:none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 1.5vw;
+    top: 8px;
+}
+.login:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.main{
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 565px 600px 360px 80px;
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+}
+
+.content_1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url("../../asset/siklus_air.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.content_1 p{
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 5vh;
+}
+.content_1 .start{
+    padding: 15px 15px 15px 15px;
+    font-size: 1.2em;
+    background-color:#198754;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30vh;
+    border: none;
+}
+.content_1 .start:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.content_2{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content_2 .text1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: justify;
+}
+.content_2 h2{
+    text-align: center;
+}
+.content_2 img{
+    width:200px;
+    height: 200px;
+}
+
+.content_3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row-reverse;
+}
+.content_3 .text2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: justify;
+}
+.content_3 h2{
+    text-align: center;
+}
+.content_3 img{
+    width:200px;
+    height: 200px;
+}
+
+.footer{
+    background-color: #219ebc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:792px){
+.navbar.responsive{
+    height: 235px;
+    transition: height 0.5s;
+}
+
+.logo{
+    display: none;
+}
+
+#icon{
+    padding-right: 2vw;
+}
+
+.burger_menu{
+    display: block;
+}
+
+.list_menu{
+    width: 100%;
+    margin-top: 55px;
+    display: block;
+    margin-right: 0;
+}
+.list_menu li{
+    padding-left: 2.5vw;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.list_menu li:hover{
+    background-color: #ddd;
+    color: black;
+}
+.list_menu a{
+    margin-left: 0;
+}
+
+.login{
+    position: absolute;
+    top: 8px;
+    right: 2.5vw;
+}
+
+.main{
+    grid-template-rows: 91vh auto auto 12.5vh;
+}
+
+.content_1 p{
+    font-size: 1.5em;
+}
+.content_1 .start{
+    font-size: 0.8em;
+}
+
+.content_2{
+    flex-direction: column;
+}
+.content_2 h2{
+    margin: 30px 0 30px 0;
+}
+.content_2 .text1{
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.content_2 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 6vh;
+}
+
+.content_3{
+    flex-direction: column;
+}
+.content_3 h2{
+    margin: 30px 0 30px 0;
+}
+.content_3 .text2{
+    width: 80%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.content_3 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 6vh;
+}
+}

@@ -3,23 +3,19 @@
 burger_menu = document.querySelector(".burger_menu");
 sidebar = document.querySelector("#mysidebar");
 shadow = document.querySelector(".shadow")
-body = document.querySelector("body")
 
 burger_menu.addEventListener("click", ()=>{
     if(sidebar.className === "sidebar"){
         sidebar.className += " responsive";
         shadow.className += " responsive";
-        body.className += "body";
     }else{
         sidebar.className = "sidebar";
         shadow.className = "shadow";
-        body.className = "";
 }})
 
 shadow.addEventListener("click",()=>{
     sidebar.className = "sidebar";
     shadow.className = "shadow";
-    body.className = "";
 })
 
 menu_1 = document.querySelector(".menu_1");

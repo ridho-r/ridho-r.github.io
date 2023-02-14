@@ -25,27 +25,32 @@ list_sub_menu_1 = document.querySelector("#mylistsubmenu1");
 list_sub_menu_2 = document.querySelector("#mylistsubmenu2");
 list_sub_menu_3 = document.querySelector("#mylistsubmenu3");
 
+$(document).ready(function(){
+    
+})
+
 // menu sidebar
-menu_1.addEventListener("click",()=>{
-    if(list_sub_menu_1.className === "list_sub_menu_1"){
-        list_sub_menu_1.className += " responsive";
-    }else{
-        list_sub_menu_1.className = "list_sub_menu_1";
-    }
-})
+// menu_1.addEventListener("click",()=>{
+//     if(list_sub_menu_1.className === "list_sub_menu_1"){
+//         list_sub_menu_1.className += " responsive";
+//     }else{
+//         list_sub_menu_1.className = "list_sub_menu_1";
 
-menu_2.addEventListener("click",()=>{
-    if(list_sub_menu_2.className === "list_sub_menu_2"){
-        list_sub_menu_2.className += " responsive";
-    }else{
-        list_sub_menu_2.className = "list_sub_menu_2";
-    }
-})
+//     }
+// })
 
-menu_3.addEventListener("click",()=>{
-    if(list_sub_menu_3.className === "list_sub_menu_3"){
-        list_sub_menu_3.className += " responsive";
-    }else{
-        list_sub_menu_3.className = "list_sub_menu_3";
-    }
-})
+// menu_2.addEventListener("click",()=>{
+//     if(list_sub_menu_2.className === "list_sub_menu_2"){
+//         list_sub_menu_2.className += " responsive";
+//     }else{
+//         list_sub_menu_2.className = "list_sub_menu_2";
+//     }
+// })
+
+// menu_3.addEventListener("click",()=>{
+//     if(list_sub_menu_3.className === "list_sub_menu_3"){
+//         list_sub_menu_3.className += " responsive";
+//     }else{
+//         list_sub_menu_3.className = "list_sub_menu_3";
+//     }
+// })

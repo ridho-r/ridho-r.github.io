@@ -19,11 +19,17 @@
 }
 
 .logo{
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     color: white;
-    margin-top: 10px;
     margin-left: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    margin-top: -7px;
+    margin-right: -5px;
 }
 
 .burger_menu{
@@ -38,7 +44,7 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 .list_menu a{
     font-weight: bold;

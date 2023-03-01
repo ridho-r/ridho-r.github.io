@@ -8,28 +8,24 @@
     <script src="https://kit.fontawesome.com/89df0b93c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/format_halaman_materi.css">
     <link rel="stylesheet" href="../css/materi.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
     <div class="navbar">
-
         <a href="index.html">
             <div class="home"><i class="fa-solid fa-house">&nbsp;</i>Beranda</div>
         </a>
         <div class="burger_menu">
             <i class="fa fa-bars fa-xl"></i>
         </div>
-
     </div>
 
     <div class="sidebar" id="mysidebar">
-        <div class="sidebar_box">
 
+        <div class="sidebar_box">
             <div class="account"><i class="fa-solid fa-user"></i>&ensp;Akun</div>
-            <p class="log_out"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Keluar</p>
             <div class="instruction">
                 <i id="icon" class="fa-solid fa-circle-question"></i>&ensp;Petunjuk penggunaan
             </div>
@@ -38,57 +34,42 @@
                 <p class="title">SIKLUS AIR</p>
 
                 <div class="list_menu">
-
-                    <p class="menu_1">Subtema 1&ensp;<i class="fa-solid fa-caret-down"></i></p>
-                    <ul class="list_sub_menu_1" id="mylistsubmenu1" style="height: auto;">
-                        <a href="#">
-                            <li class="sub_menu sub_active"><i class="fa-solid fa-book"></i>&ensp;Manfaat Air</li>
+                    <p class="menu1">Subtema 1&ensp;<i class="fa-solid fa-caret-down"></i></p>
+                    <ul id="mysubmenu1" class="submenu1 active">
+                        <a>
+                            <li class="aktif"><i class="fa-solid fa-book"></i>&ensp;Manfaat Air</li>
                         </a>
                         <a href="subtema_1_2.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Siklus Air</li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Siklus Air</li>
                         </a>
                     </ul>
-                    <a class="link" href="#">
-                        <p class="menu"><i class="fa-solid fa-pencil"></i>&ensp;Kuis 1</p>
-                    </a>
-
-                    <p class="menu_2">Subtema 2&ensp;<i class="fa-solid fa-caret-down"></i></p>
-                    <ul class="list_sub_menu_2" id="mylistsubmenu2">
+                    <p class="question">Kuis 1</p>
+                    <p class="menu2">Subtema 2&ensp;<i class="fa-solid fa-caret-down"></i></p>
+                    <ul id="mysubmenu2" class="submenu2">
                         <a href="subtema_2_1.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Siklus Air Tanah</li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Siklus Air Tanah</li>
                         </a>
                         <a href="subtema_2_2.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Siklus Air dan Bencana Kekeringan
-                            </li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Bencana Kekeringan</li>
                         </a>
                     </ul>
-                    <a class="link" href="#">
-                        <p class="menu"><i class="fa-solid fa-pencil"></i>&ensp;Kuis 2</p>
-                    </a>
-
-                    <p class="menu_3">Subtema 3&ensp;<i class="fa-solid fa-caret-down"></i></p>
-                    <ul class="list_sub_menu_3" id="mylistsubmenu3">
+                    <p class="question">Kuis 2</p>
+                    <p class="menu3">Subtema 3&ensp;<i class="fa-solid fa-caret-down"></i></p>
+                    <ul id="mysubmenu3" class="submenu3">
                         <a href="subtema_3_1.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Air Untuk Kebutuhan Sehari-hari
-                            </li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Air Untuk Kebutuhan</li>
                         </a>
                         <a href="subtema_3_2.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Hari Air Sedunia</li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Hari Air Sedunia</li>
                         </a>
                         <a href="subtema_3_3.html">
-                            <li class="sub_menu"><i class="fa-solid fa-book"></i>&ensp;Penghematan Air</li>
+                            <li><i class="fa-solid fa-book"></i>&ensp;Penghematan Air</li>
                         </a>
                     </ul>
-                    <a class="link" href="#">
-                        <p class="menu"><i class="fa-solid fa-pencil"></i>&ensp;Kuis 3</p>
-                    </a>
-
-                    <a class="link" href="#">
-                        <p class="menu">Evaluasi</p>
-                    </a>
+                    <p class="question">Kuis 3</p>
+                    <p class="question">Evaluasi</p>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -133,6 +114,41 @@
                     itu, manusia seharusnya senantiasa bersyukur kepada Tuhan pencipta alam.</p>
             </div>
         </div>
+
+            
+        <div class="latihan">
+            <h4>Latihan</h4>
+            <h3>Jawaban</h3>
+            <div class="jawaban">
+                <div class="drag" draggable="true" id="satu">Warga sulit mendapat air bersih</div>
+                <div class="drag" draggable="true" id="dua">Warga sulit mendapat bahan pangan</div>
+                <div class="drag" draggable="true" id="tiga">Kelurahan Waborobo</div>
+                <div class="drag" draggable="true" id="empat">Kelurahan Katobengke</div>
+                <div class="drag" draggable="true" id="lima">Lokasi berada di dataran tinggi</div>
+                <div class="drag" draggable="true" id="enam">Lokasi berada di pinggir pantai</div>
+            </div>
+            <br>
+            <h3>Soal</h3>
+            <div class="area_soal">
+                <div class="soal">Peristiwa apa yang terjadi?<div class="drop" id="isi1"></div>
+                </div>
+                <div class="soal">Dimana peristiwa itu terjadi?<div class="drop" id="isi2"></div>
+                </div>
+                <div class="soal">Apa penyebab peristiwa itu terjadi?<div class="drop" id="isi3"></div>
+                </div>
+                <div class="soal" style="display: none;">
+                    <div class="drop"></div>
+                </div>
+                <div class="soal" style="display: none;">
+                    <div class="drop"></div>
+                </div>
+                <div class="soal" style="display: none;">
+                    <div class="drop"></div>
+                </div>
+            </div>
+            <p class="button_cek">Cek Jawaban</p>
+        </div>
+
         <div class="page_button">
             <div></div>
             <a href="subtema_1_2.html">
@@ -140,6 +156,7 @@
             </a>
         </div>
     </div>
+
 
     <div class="footer">
         SIKLUS AIR KELAS V SD

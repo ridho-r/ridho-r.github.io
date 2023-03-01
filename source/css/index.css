@@ -40,11 +40,9 @@
 }
 
 .list_menu{
-    width: 80%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-right: 120px;
 }
 .list_menu a{
     font-weight: bold;
@@ -250,7 +248,7 @@ margin-top: 40px;
     align-items: center;
 }
 
-@media screen and (max-width:792px){
+@media screen and (max-width:680px){
 .navbar.responsive{
     height: 235px;
     transition: height 0.5s;
